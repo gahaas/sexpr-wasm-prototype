@@ -18,6 +18,7 @@
 set -o nounset
 set -o errexit
 
+export USE_NINJA=1
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 source ${SCRIPT_DIR}/travis-common.sh
 
